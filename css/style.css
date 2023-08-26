@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    font-family: 'Poppins', sans-serif;
+    --white: #ffffff;
+    --orange: #FBB03B;
+    --orange-light: #FFF3DF;
+    --black: #000000;
+    --red: #FF0000;
+    --blue: #3b5998;
+    --towty: #ea4335;
+    --navColor : #fff ;
+}
+
+/* + for opacity bg */
+.black{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+    opacity: 0.3;
+} 
+
+/* + header ********************************************************/
+header{
+    position: relative;
+    background-image: url(../img/header-big/bg-main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.iconmainMina{
+    width: 100% !IMPORTANT;
+    margin: auto;
+}
+/* + sign up & login */
+.bg-white{
+    border-radius: 10px !important;
+}
+header .signUpUi{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 13;
+}
+header .login{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+}
+header .login .loginCont{
+    box-shadow: 0px 0px 7px #62616067;
+    padding: 18px !important;
+    border-radius: 10px;
+}
+header .login .loginCont button{
+    font-weight: 500;
+}
+header .login .loginCont .face button {
+    width: 50%;
+    padding: 10px;
+    border-radius: 50px;
+}
+header .login .loginCont .face .faceBook {
+   background-color: var(--blue) ;
+   color: var(--white);
+   border: 2px solid var(--blue) !important;
+}
+header .login .loginCont  .face .faceBook:hover {
+    color: var(--black);
+    background-color: var(--white) ;
+    padding: 10px ;
+}
+header .login .loginCont .face .gmail {
+    background-color: var(--towty) ;
+    color: var(--white);
+    border: 2px solid var(--towty) !important;
+}
+header .login .loginCont .face .gmail:hover {
+    color: var(--black);
+    background-color: var(--white) ;
+    padding: 10px;
+}
+header .signIn{
+    width: 100%;
+    padding: 10px ;
+    border-radius: 50px ;
+    margin-bottom: 30px;
+    background-color: var(--orange) !important;
+    border: 2px solid var(--orange) !important;
+}
+header .login .loginCont .signIn:hover{
+    background-color: var(--white) !important;
+    border: 2px solid var(--orange) !important;
+    color: var(--black);
+    padding: 10px;
+}
+header .text-center.x{
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+.form-check-label.x{
+    font-size: 8px;
+}
+.input input {
+    border-radius: 50px; 
+}
+header .signUp{
+    cursor: pointer;
+}
+.listTopSec1{
+    position: absolute;
+    z-index: 15;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid;
+    background-color: white;
+}
+
+/* + list Top for small screen Dropdown Content (Hidden by Default) ****/
+header .listTopSec1 div {
+    cursor: pointer;
+}
+header .listTopSec1 .dropbtn {
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+header .listTopSec1 .xco{
+    background-color: var(--blue);
+    color: var(--white) !important;
+    width: 300px !important;
+    margin: auto;
+}
+header .listTopSec1 .xco:hover {
+    background-color: #0e3c81;
+    color: var(--white) !important;
+}
+header .listTopSec1 .xco.pop{
+    background-color: var(--orange);
+    width: 150px !important;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: large;
+}
+header .listTopSec1 .xco.pop:hover{
+    background-color: orange;
+}
+
+header .phoneNumber{
+    width: 100;
+    border: #eee solid 1px;
+    height: 55px;
+    border-radius:50px ;
+}
+header .btn_Forgot{
+    cursor: pointer;
+}
+/* + select */
+header .btnn.x{
+    background-color: #eee;
+    border-radius:50px;
+    margin: 10px 10px !important;
+    border: 0;
+    width: 100px;
+}
+header .btnn.x:hover{
+    background-color: transparent;
+    border: 1px solid black ;
+}
+header .phoneNumber:focus{
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+/* Dropdown Button */
+  /* The container <div> - needed to position the dropdown content */
+ header .listTopSec1 .dropdown {
+    position: relative;
+    display: block;
+    width: 300px;
+    margin: -12px auto;
+  }
+  
+  /* Dropdown Content (Hidden by Default) for the small screen */
+  header .listTopSec1 .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1 !important;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) !important;
+    z-index: 1;
+    width: 100%;
+  }
+  /* inside the drop down*/
+  header .listTopSec1 .shoes-content {
+    display: none;
+    left: 150px;
+    background-color: #f1f1f1 !important;
+    min-width: 150px;
+    z-index: 1;
+    border-top: var(--orange) 2px solid !important;
+  }
+  header .listTopSec1 .accesorries-content {
+    display: none;
+    left: 150px;
+    background-color: #f1f1f1 !important;
+    min-width: 150px;
+    border-top: var(--orange) 2px solid !important;
+  }
+  header .listTopSec1 .clothing-content {
+    display: none;
+    left: 150px;
+    background-color: #f1f1f1 !important;
+    min-width: 150px;
+    border-top: var(--orange) 2px solid !important; 
+  }
+  /* Links inside the dropdown */
+  header .listTopSec1 .a {
+    padding: 12px 16px;
+  }
+  header .listTopSec1 a {
+    cursor: pointer;
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change bg-C of dropdown links on hover */
+  header .listTopSec1 a:hover {background-color: #ddd !important ;  }
+  
+  /* Show the dropdown menu on hover */
+  header .listTopSec1 .showShoes:hover .shoes-content {display: block;}
+  header .listTopSec1 .accesorries:hover .accesorries-content {display: block;}
+  header .listTopSec1 .clothing:hover .clothing-content {display: block;}
+
+
+  /* for small screen *****/
+/* h5{
+    color: var(--white);
+} */
+header a{
+    color: var(--white) !important;
+}
+header .header-sm a{
+    color: var(--black) !important;
+}
+header .header-sm .main-sm{
+    position: relative;
+    background-image: url(../imgheader/bg-main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 56px);
+}
+header .main .black{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 56px);
+    background-color: var(--black);
+    opacity: 0.3;
+}
+header .collapse.navbar-collapse a:hover{
+   background-color: var(--orange);
+   transition: 0.2s;
+}
+header .header-sm .signUp{
+    background-color: var(--orange);
+    min-width: 8rem;
+}
+header .header-sm .signUp:hover{
+    background-color: var(--orange);
+    color: var(--white) !important;
+    font-weight: 600;
+    transition: 0.3s;
+}
+/* + main  ******/
+header h1{
+    font-size: 50px;
+}
+header .cicle {
+    cursor: pointer;
+    background-color: var(--orange);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h3 {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .xc {
+    width: 5px;
+    background-color: #636363;
+    height: 75%;
+    margin: auto 0px;
+} header .bot{
+    position: absolute;
+    top: calc(100% - 100px);
+    width: 75%;
+    height: 100px;
+    background-color: var(--white);
+    border-top-right-radius: 80px;
+}
+header .bot2{
+    position: absolute;
+    top: calc(100% - 100px) ;
+    right: 10%;
+    z-index: 5;
+}
+header ul a:hover , header a i:hover{
+    color: var(--orange) !important;
+    transition: 0.3s;
+}
+header .men{
+    border-top: #eee 1px solid;
+    z-index: 9;
+    top: 73px;
+    box-shadow: 0 5px 10px rgba(88, 88, 88, 0.336);
+}
+/* The list is at the bottom of the main section  */
+header .bot.row .col i {
+    color: var(--orange);
+    background-color: #fff3df;
+    border-radius: 5px;
+    padding: 10px 8px;
+}
+header .bot.row .col .text span{
+    color: var(--orange);
+}
+header .bot.row .col .text {
+    height: 77px;
+    width: 80px;
+    text-align: start;
+}
+header .bot.row .col .text p{
+    color: #afafaf;
+    width: 150%;
+    font-size: 15%;
+}
+header .bot .col .text h6{
+    font-size: small;
+}
+/* Arrow-main ******/
+header .bot2 i {
+    cursor: pointer;
+}
+header .Arrow-main{
+    position: relative;
+}
+header .bot2 .Arrow-main div {
+    z-index: -1;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    top: -15px;
+    left: -15px;
+    opacity: .2;
+    border-radius: 15px;
+}
+header .bot2.position-absolute.d-flex.gap-5 .Arrow-main div:hover {
+    opacity: 1;
+}
+header .bot2.position-absolute.d-flex.gap-5 .Arrow-main i:hover {
+    color: #000000;
+    z-index: 5;
+}
+header .bot2.position-absolute.d-flex.gap-5 .Arrow-main  {
+    color: #ffffff;
+    z-index: 5;
+}
+.men.bg-white.w-100.h-75.position-absolute p {
+    cursor: pointer;
+}
+header .topNav{
+    position: absolute;
+    background-color: #fff; 
+    width: 100%;
+    height: 75px;
+}
+header .iconSecation1, .iconSecation1 a{
+    color: #ffffff !important;
+}
+@media (max-width: 767px) {
+    .iconmain {
+        background-color: rgb(255, 255, 255);
+        color: var(--black);
+        color: black !important;
+    }
+    .iconmain i{
+        width: 100%;
+    }header{
+        width: 100% !important;
+    }
+    .iconSecation1{
+        color: #000000 !important;
+    }
+    .iconSecation1 a{
+        color: #000000 !important;
+    }
+}
+/* + hero ******************************************************************/
+.container .image-container {
+    position: relative;
+    flex: 1;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: 1s;
+}
+.ImgHeroSection{
+    height: 50vh;
+}
+@media (max-width: 991px) {
+    .image-container{
+        border-radius: 20px;
+    }
+    .image-container .black {
+        border-radius: 20px;
+    }
+}
+.image-container.x1{
+    background-image: url(../img/hero/pic-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 373px;
+    margin: auto;
+    width: 90%;
+}
+.image-container.x2{
+    background-image: url(../img/hero/pic-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 373px;
+    margin: auto;
+    width: 90%; 
+}
+.image-container.x3{
+    background-image: url(../img/hero/pic-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 373px;
+    margin: auto;
+    width: 90%;
+}
+.container .image-container .h2Butt{
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: -10%;
+    transform: translate( 50%, -30%);
+    display: none;
+    transition: .5s;
+}
+@media (max-width: 991px) {
+.image-container.x1 .h2Butt{
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: -38%;
+    transform: translate( 50%, -30%);
+    display: none;
+    transition: .5s;
+}}
+.hero .btnHero{
+    background-color: var(--white) ;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    font-size: large;
+}
+.hero .btnHero:hover{
+    background-color: var(--orange) ;
+    color: var(--black);
+}
+.hero .black{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: var(--black);
+    opacity: 0.3;
+}
+.hero .spcial{
+    background-color: var(--red);
+    border-radius: 20px;
+}
+.h2Butt.x{
+    display: block;
+    margin: -30px;
+}
+/* - hero ********************************************************************/
+
+/* + figure && section *******************************************************/
+figure ,section{
+    margin: 4rem 0 !important;
+}
+figure p, section p{
+    color: var(--black);
+    font-size: medium;
+    font-weight: 300;
+}
+figure .btn-Figure, section .btn-Figure{
+    background-color: var(--white) ;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    font-size: small;
+    border: solid 1px var(--gray);
+}
+figure .btn-Figure:hover, section .btn-Figure:hover{
+    background-color: var(--orange) ;
+    color: var(--black);
+}
+figure .pic-figure:hover, section .pic-figure:hover{
+    transform: scale(1.1);
+}
+figure h6, section h6{
+    color: var(--black);
+}
+figure span, section span{
+    color: var(--gray);
+}
+figure .special-offer, section .special-offer{
+    background-color: var(--red);
+    border-radius: 20px;
+    color: var(--white);
+}
+figure .special-offer:hover, section .special-offer:hover{
+    color: var(--black) !important;
+    background-color: var(--white) !important;
+    border: solid 1px var(--orange-light) !important;
+}
+figure .pic-1-Figure, section .pic-1-Figure{
+    position: relative;
+}
+figure .pic-1-Figure .special-offer, section .pic-1-Figure .special-offer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(30%, 50%);
+}
+figure i.fa-solid{
+    width: fit-content;
+    color: var(--gray);
+    font-size: 2rem;
+    margin-bottom: 6rem;
+    transition: transform 0.3s ease;
+}
+figure i.fa-solid.deg0:hover{
+    color: var(--black);
+    transform: rotate(540deg)  scale(130%);
+}
+figure i.fa-solid.deg180:hover{
+    color: var(--black);
+    transform: scale(130%) rotate(360deg);
+}
+figure .pic-figure, section .pic-figure{
+    min-width: 12rem;
+    transition: 0.4s;
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+    figure .pic-figure, section .pic-figure{
+      width: 12rem;
+    }
+}
+.arrwoSec2{
+    cursor: pointer;
+    color: #eee !important;
+}
+.arrwoSec2:hover{
+    color: #000000  !important;
+}
+/* - figure **************************************************************/
+
+
+/* + figcaption **********************************************************/
+figcaption{
+    margin: 4rem 0 10rem ;
+}
+figcaption h2 , section h2{
+    font-size: 22px;
+    font-weight: 400;
+}
+figcaption .icon{
+    cursor: pointer;
+    background-color: #EEE;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+figcaption .icon i{
+    font-size: x-large;
+    font-weight: 400;
+}
+figcaption .icon:hover{
+    background-color: var(--orange-light);
+    color: var(--orange);
+}
+figcaption h5{
+    margin: 2rem 0 1.4rem;
+    font-size: large;
+    font-weight: 400;
+}
+figcaption p{
+    font-size: x-small;
+    color: var(--dark-gray);
+}
+figcaption .down-figcaptionmy{
+    gap: 4rem;
+}
+@media (min-width: 1400px){
+    figcaption .down-figcaptionmy{
+        gap: 8rem;
+    }
+}
+/* - figcaption *******************************************************/
+
+/* + footer ***********************************************************/
+footer{
+    margin: 10rem 0 3rem;
+}
+footer .UP-Footer{
+    background-image: url(../img/footter/footter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    max-height: 300px;
+}
+footer .UP-Footer .opaci{
+    background-color: #00000085;
+    width: 100%;
+    height: 100%;
+}
+footer .UP-Footer h4{
+    color: var(--white);
+    width: 30rem;
+}
+footer .UP-Footer input{
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin-right: 1rem;
+    font-size: small;
+}
+footer .UP-Footer button{
+    font-size: small;
+    color: var(--black);
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    background-color: var(--orange);
+    border: 0;
+}
+@media (max-width: 768px){
+    .container{
+        width: 100% !important;
+    }
+    footer .UP-Footer{
+        background-image: url(../img/footter/footter-sm.png);
+    }
+    footer h4{
+        color: var(--white);
+        width: 20rem;
+        text-align: center;
+    }
+}
+footer .Down-Footer{
+    margin-top: 3rem;
+    gap: 6rem !important;
+}
+footer .Down-Footer span{
+    color: var(--orange);
+}
+footer .Down-Footer p{
+    color: var(--dark-gray);
+    /* width: 15rem; */
+    font-size: small;
+}
+footer .Down-Footer h6{
+    font-size: large;
+}
+footer .Down-Footer h5{
+    font-size: small;
+    color: var(--black);
+    font-weight: 400;
+}
+footer .Down-Footer .foot{
+    gap: 4.5rem;
+}
+footer .Down-Footer .logo{
+    margin-right: 5rem !important;
+    width: 13rem;
+}
+@media (max-width: 1250px){
+    footer .Down-Footer{
+        justify-content: center;
+    }
+    footer .Down-Footer .logo{
+        margin-right: 0;
+    }
+    footer .Down-Footer{
+        text-align: center;
+    }
+    footer .Down-Footer .logo{
+        margin-right: 8rem;
+        width: 15rem;
+    }
+    footer .Down-Footer .foot{
+        justify-content: center;
+    }
+    footer .Down-Footer .icon{
+        margin: auto;
+    }
+    footer .Down-Footer .logo{
+        margin: auto !important;
+    }
+}
+/* - footer **************************************************************/
+
+.show{
+    display: block;
+  }
+
+  
+  .listTopSec1 .showShoes:hover .shoes-content {display: block;}
+  .listTopSec1 .accesorries:hover .accesorries-content {display: block;}
+  .listTopSec1 .clothing:hover .clothing-content {display: block;}
+
+  .navCloro{
+    color: var(--navColor) !important;
+  }
+
+  
+  .continueShopping:hover i{
+    color: var(--orange);
+  }
